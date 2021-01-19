@@ -23,9 +23,7 @@ but1   2 3 4  5 6 7 8   9 c tst srv gnd   gnd x
 Uses the 50+16 connector into the power distribution box.
 Cannot interface the Jamma directly as the lights signals are decoded by the power distribution box 
 
-Also the power distribution board generates a keepwarm voltage
-
-resistors are 680 ohm.
+Also the power distribution board generates a keepwarm voltage with 680ohms pullup resistors.
 
 R61 bl3
 R66 bl4
@@ -50,7 +48,7 @@ MIL50
 gnd  5  4  3  2  1 x gnd  6  7  8  9  x  x x x x x   c   gnd tst rst srv x x
     x s1 s2 s3 s4 x x +12v t1 t2 t3 t4 t5 x x x x cbl cct   x   x   x   x x x
 
-MIL16
+MIL16 button lamps
 
 b1  b3 b4  x b6  b8 b9 x
   b2  x  b5 x  b7  x  x 12
@@ -102,4 +100,4 @@ Looking at the male end (connector on the cable, which means red wire is pin 1)
 35 Button lamp 9
 36 +12V
 
-DO NOT WIRE THE 12V PINS TO THE FIREBEAT, it already generates its own 12V signal for the lamps, you might risk damaging the NRPS11-6A circuit breaker located near the IO connector.
+DO NOT WIRE THE 12V PINS TO THE FIREBEAT, it already generates its own 12V signal for the lamps, you risk damaging the board.
