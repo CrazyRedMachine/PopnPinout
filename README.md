@@ -24,7 +24,7 @@ Uses the 50+16 connector into the power distribution box.
 Cannot interface the Jamma directly as the lights signals are decoded by the power distribution box 
 
 ## BemaniPC (SD)
-
+p
 (looking at the cable extremity, ie.
 looking at connector on pwr distib board, top row from right to left :
 
@@ -84,3 +84,5 @@ Looking at the male end (connector on the cable, which means red wire is pin 1)
 34 Button lamp 8
 35 Button lamp 9
 36 +12V
+
+DO NOT WIRE THE 12V PINS TO THE FIREBEAT, it already generates its own 12V signal for the lamps, you might risk damaging the NRPS11-6A circuit breaker located near the IO connector.
