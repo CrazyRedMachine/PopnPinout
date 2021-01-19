@@ -23,6 +23,23 @@ but1   2 3 4  5 6 7 8   9 c tst srv gnd   gnd x
 Uses the 50+16 connector into the power distribution box.
 Cannot interface the Jamma directly as the lights signals are decoded by the power distribution box 
 
+Also the power distribution board generates a keepwarm voltage
+
+resistors are 680 ohm.
+
+R61 bl3
+R66 bl4
+R63 bl9
+
+R65 bl2
+R70 bl5
+R67 bl8
+
+R69 bl1
+R62 bl6
+R71 bl7
+
+
 ## BemaniPC (SD)
 p
 (looking at the cable extremity, ie.
