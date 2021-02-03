@@ -18,6 +18,13 @@ MIL30 2 (LOWER)
 but1   2 3 4  5 6 7 8   9 c tst srv gnd   gnd x
     cct x x s1 2 3 4 bl9 1 2   3 4 x  +12v   x
 
+### Volume pot
+
+Firebeat cabs have a volume pot controlling the sound output level. This only applies to the Line Out, not the Line Out AUX.
+
+The pot is plugged to the CN48 connector (vertical 9-pin connector under the line out RCA sockets).
+If you don't have such volume pot you can either solder one or just bridge pins 2 and 4, as well as pins 3 and 5 together (with pin 1 on top and pin 9 on bottom)
+
 ## Python
 
 Uses the 50+16 connector into the power distribution box.
