@@ -18,13 +18,35 @@ MIL30 2 (LOWER)
 but1   2 3 4  5 6 7 8   9 c tst srv gnd   gnd x
     cct x x s1 2 3 4 bl9 1 2   3 4 x  +12v   x
 
+### Volume pot
+
+Firebeat cabs have a volume pot controlling the sound output level. This only applies to the Line Out, not the Line Out AUX.
+
+The pot is plugged to the CN48 connector (vertical 9-pin connector under the line out RCA sockets).
+If you don't have such volume pot you can either solder one or just bridge pins 2 and 4, as well as pins 3 and 5 together (with pin 1 on top and pin 9 on bottom)
+
 ## Python
 
 Uses the 50+16 connector into the power distribution box.
 Cannot interface the Jamma directly as the lights signals are decoded by the power distribution box 
 
-## BemaniPC (SD)
+Also the power distribution board generates a keepwarm voltage with 680ohms pullup resistors.
 
+R61 bl3
+R66 bl4
+R63 bl9
+
+R65 bl2
+R70 bl5
+R67 bl8
+
+R69 bl1
+R62 bl6
+R71 bl7
+
+
+## BemaniPC (SD)
+p
 (looking at the cable extremity, ie.
 looking at connector on pwr distib board, top row from right to left :
 
@@ -33,7 +55,7 @@ MIL50
 gnd  5  4  3  2  1 x gnd  6  7  8  9  x  x x x x x   c   gnd tst rst srv x x
     x s1 s2 s3 s4 x x +12v t1 t2 t3 t4 t5 x x x x cbl cct   x   x   x   x x x
 
-MIL16
+MIL16 button lamps
 
 b1  b3 b4  x b6  b8 b9 x
   b2  x  b5 x  b7  x  x 12
@@ -84,3 +106,5 @@ Looking at the male end (connector on the cable, which means red wire is pin 1)
 34 Button lamp 8
 35 Button lamp 9
 36 +12V
+
+DO NOT WIRE THE 12V PINS TO THE FIREBEAT, it already generates its own 12V signal for the lamps, you risk damaging the board.
